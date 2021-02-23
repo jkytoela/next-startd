@@ -1,14 +1,16 @@
 {
-  "name": "typescript-nextjs-starter",
-  "description": "A TypeScript starter for Next.js that includes all you need to build amazing projects",
+  "name": "startd-theme",
+  "description": "A TypeScript/Next.js theme that includes everything you need to build amazing landing page!",
   "version": "1.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <oi@joaopedro.cc> (joaopedro.cc)",
+  "author": "Jaakko Kytölä <kytola.jaakko@gmail.com> (jaakkokytola.com)",
   "license": "MIT",
   "keywords": [
     "nextjs",
     "starter",
-    "typescript"
+    "typescript",
+    "tailwind",
+    "theme"
   ],
   "scripts": {
     "dev": "next",
@@ -28,7 +30,8 @@
   "dependencies": {
     "next": "10.0.7",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "twind": "0.15.4"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
