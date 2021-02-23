@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navigation from '@/components/navigation';
+import { tw } from 'twind';
 
 interface IProps {
   children: React.ReactNode;
@@ -12,7 +13,7 @@ const Page = ({ children, title = `STARTD` }: IProps) => (
       <title>{title}</title>
       <link rel="icon" href="/logo.svg" />
     </Head>
-    <div>
+    <div className={tw(`min-h-screen flex flex-col`)}>
       <Navigation />
       {children}
     </div>
