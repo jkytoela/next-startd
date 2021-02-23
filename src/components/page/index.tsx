@@ -10,7 +10,7 @@ const Page = ({ children, title = `STARTD` }: IProps) => (
   <div>
     <Head>
       <title>{title}</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/logo.svg" />
     </Head>
     <div>
       <Navigation />

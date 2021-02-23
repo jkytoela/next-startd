@@ -52,8 +52,7 @@ const MenuButton = ({ toggleMenu, showMenu }: IMenuButton) => (
     aria-controls="mobile-menu"
     aria-expanded={showMenu}
     onClick={toggleMenu}
-    className={tw(`
-    bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white`)}
+    className={tw(`p-2 text-gray-400`)}
   >
     <span className={tw(`sr-only`)}>Open menu</span>
     {showMenu ? (
@@ -98,9 +97,7 @@ const MobileMenu = () => (
       {links.map((link: Link) => (
         <a
           href={link.href}
-          className={tw(
-            `text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium`,
-          )}
+          className={tw(`text-gray-500 block px-3 py-2 text-base font-medium`)}
         >
           {link.label}
         </a>
@@ -113,7 +110,7 @@ const MobileMenu = () => (
             key={`mobile-${link.href}`}
             href={link.href}
             className={tw(
-              `block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700`,
+              `block px-3 py-2 text-base font-medium text-gray-500`,
             )}
           >
             {link.label}
@@ -134,7 +131,7 @@ const Navigation = () => {
         <div className={tw(`flex items-center justify-between h-24`)}>
           <div className={tw(`flex items-center`)}>
             <div className={tw(`flex-shrink-0`)}>
-              <img className={tw(`h-12 w-24`)} src="vercel.svg" alt="logo" />
+              <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" />
             </div>
             <div className={tw(`hidden md:block`)}>
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>

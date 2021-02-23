@@ -11,7 +11,7 @@ export default function Home() {
         <div className={tw(`max-w-4xl mx-auto py-16 px-14 sm:px-6 lg:px-8`)}>
           <h1
             className={tw(
-              `text-6xl lg:text-8xl text-center font-semibold leading-snug text-gray-900`,
+              `text-4xl lg:text-8xl text-center font-semibold leading-snug text-gray-900`,
             )}
           >
             Insert catchy headline here
@@ -19,7 +19,7 @@ export default function Home() {
           <div className={tw(`max-w-2xl mx-auto`)}>
             <p
               className={tw(
-                `mt-10 text-gray-400 text-center text-2xl lg:text-3xl`,
+                `mt-10 text-gray-400 text-center text-xl lg:text-3xl`,
               )}
             >
               Make your website wonderful and build beyond your expectations.
