@@ -140,7 +140,7 @@ const Navigation = () => {
                     key={link.href}
                     href={link.href}
                     className={tw(
-                      `text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md text-md font-medium`,
+                      `text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md font-medium`,
                     )}
                   >
                     {link.label}
