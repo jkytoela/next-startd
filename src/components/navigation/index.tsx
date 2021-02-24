@@ -14,19 +14,19 @@ type Link = {
 
 const links = [
   {
-    label: `Link 1`,
+    label: `Features`,
     href: `#`,
   },
   {
-    label: `Link 2`,
+    label: `Testimonials`,
     href: `#`,
   },
   {
-    label: `Link 3`,
+    label: `Pricing`,
     href: `#`,
   },
   {
-    label: `Link 4`,
+    label: `Blog`,
     href: `#`,
   },
 ];

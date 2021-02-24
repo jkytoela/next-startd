@@ -17,8 +17,8 @@ const PlayButton = () => (
 );
 
 const VideoSection = () => (
-  <section className={tw(`bg-gray-100`)}>
-    <div className={tw(`max-w-7xl mx-auto py-16 lg:pt-32 pb-36 block lg:flex lg:flex-wrap lg:items-center`)}>
+  <section className={tw(`bg-gradient-to-b from-gray-50 to-white shadow-inner`)}>
+    <div className={tw(`max-w-7xl mx-auto py-16 lg:pt-32 pb-36 block lg:flex lg:flex-wrap`)}>
       <div className={tw(`lg:flex-1 mx-auto`)}>
         <div className={tw(`mx-8 lg:mr-12 relative shadow-2xl`)}>
           <Preferences />
@@ -26,10 +26,10 @@ const VideoSection = () => (
         </div>
       </div>
       <div className={tw(`lg:mt-20 mx-8 lg:mx-0 lg:mt-0 lg:flex-1`)}>
-        <h2 className={tw(`mt-24 lg:mt-0 font-sans text-4xl font-semibold text-gray-800`)}>
-          Aliqua laborum exercitation velit
+        <h2 className={tw(`mt-24 lg:mt-0 py-8 font-sans text-4xl font-semibold text-gray-800`)}>
+          We are the market leader
         </h2>
-        <p className={tw(`font-sans text-gray-500 mt-10 text-lg`)}>
+        <p className={tw(`font-sans text-gray-500 mt-2 text-lg`)}>
           Enim reprehenderit exercitation do eiusmod enim dolore nisi do ullamco esse excepteur nisi anim deserunt. Ad
           irure adipisicing in sunt irure sunt eiusmod mollit fugiat. Excepteur amet labore nostrud ullamco incididunt
           ad cupidatat Lorem pariatur occaecat minim duis pariatur ut. Aliquip voluptate elit anim ad nisi adipisicing
