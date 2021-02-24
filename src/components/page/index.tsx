@@ -4,13 +4,11 @@ import { tw } from 'twind';
 
 interface IProps {
   children: React.ReactNode;
-  title?: string;
 }
 
-const Page = ({ children, title = `STARTD` }: IProps) => (
+const Page = ({ children }: IProps) => (
   <div>
     <Head>
-      <title>{title}</title>
       <link rel="icon" href="/logo.svg" />
     </Head>
     <div className={tw(`min-h-screen flex flex-col`)}>
