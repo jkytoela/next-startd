@@ -31,18 +31,10 @@ const Header = () => (
       <div className={tw(`mt-4 w-full`)}>
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>These folks get it</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
-          <div className={tw(`w-24 m-12 mb-8`)}>
-            <Aws />
-          </div>
-          <div className={tw(`w-36 m-12`)}>
-            <Netlify />
-          </div>
-          <div className={tw(`w-36 m-12`)}>
-            <Nike />
-          </div>
-          <div className={tw(`w-36 m-12`)}>
-            <Figma />
-          </div>
+          <Aws className={tw(`w-24 m-12 mb-8`)} />
+          <Netlify className={tw(`w-36 m-12`)} />
+          <Nike className={tw(`w-36 m-12`)} />
+          <Figma className={tw(`w-36 m-12`)} />
         </div>
       </div>
     </div>

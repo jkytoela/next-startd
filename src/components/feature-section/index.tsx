@@ -1,43 +1,71 @@
 import { tw } from 'twind';
-import FeatureSvg from '@/constants/svg/features.svg';
+import Check from '@/constants/svg/check.svg';
 
-type Feature = {
-  title: string;
-  description: string;
-};
-
-interface IProps {
-  features: Feature[];
-}
-
-const FeatureSection = ({ features }: IProps) => (
-  <section className={tw(`py-8`)}>
-    <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`)}>
-      <div className={tw(`flex flex-wrap -mx-8 items-center`)}>
-        <div className={tw(`w-full lg:w-1/2 px-8`)}>
-          <ul className={tw(`space-y-12`)}>
-            {features.map((feature, index) => (
-              <li className={tw(`flex -mx-4`)}>
-                <div className={tw(`px-4`)}>
-                  <span
-                    className={tw(`flex w-16 h-16 mx-auto items-center
-                      justify-center text-2xl font-bold font-heading rounded-full
-                      bg-blue-50 text-blue-500`)}
-                  >
-                    {index + 1}
-                  </span>
-                </div>
-                <div className={tw(`px-4`)}>
-                  <h3 className={tw(`my-4 text-xl font-semibold`)}>{feature.title}</h3>
-                  <p className={tw(`text-gray-500 leading-loose`)}>{feature.description}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
+const FeatureSection = () => (
+  <section className={tw(`bg-white`)}>
+    <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8`)}>
+      <div className={tw(`container mx-auto px-6 p-6 bg-white`)}>
+        <div className={tw(`mb-16 text-center`)}>
+          <h3 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>Features</h3>
+          <p className={tw(`mt-2 text-7xl font-bold tracking-tight text-gray-900`)}>How we change the game</p>
         </div>
-        <div className={tw(`w-full lg:w-1/2 px-8`)}>
-          <div className={tw(`mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0`)}>
-            <FeatureSvg />
+        <div className={tw(`flex flex-wrap my-12`)}>
+          <div className={tw(`w-full border-b md:w-1/2 md:border-r lg:w-1/3 p-8`)}>
+            <div className={tw(`flex items-center mb-6`)}>
+              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
+              <div className={tw(`ml-4 text-xl`)}>Increase sales</div>
+            </div>
+            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+              Consectetur pariatur irure exercitation sit amet id consectetur consecteturmagna et Lorem labore qui
+              velit.
+            </p>
+          </div>
+          <div className={tw(`w-full border-b md:w-1/2 lg:w-1/3 lg:border-r p-8`)}>
+            <div className={tw(`flex items-center mb-6`)}>
+              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
+              <div className={tw(`ml-4 text-xl`)}>Enterprise-ready</div>
+            </div>
+            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+              Labore duis pariatur est exercitation laboris cupidatat amet cillum. Amet nisi ullamco.
+            </p>
+          </div>
+          <div className={tw(`w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8`)}>
+            <div className="flex items-center mb-6">
+              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
+              <div className={tw(`ml-4 text-xl`)}>Unlimited growth</div>
+            </div>
+            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+              Elit deserunt nisi esse duis cupidatat proident sit minim mollit officia pariatur incididunt in tempor.
+            </p>
+          </div>
+          <div className={tw(`w-full border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 p-8`)}>
+            <div className={tw(`flex items-center mb-6`)}>
+              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
+              <div className={tw(`ml-4 text-xl`)}>Recommended by experts</div>
+            </div>
+            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+              Velit sit tempor pariatur quis pariatur incididunt culpa dolor voluptate officia incididunt velit dolore.
+            </p>
+          </div>
+          <div className={tw(`w-full border-b md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8`)}>
+            <div className={tw(`flex items-center mb-6`)}>
+              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
+              <div className={tw(`ml-4 text-xl`)}>Modern platform</div>
+            </div>
+            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+              Laboris elit consectetur sint nisi eu mollit proident sit magna velit adipisicing consequat amet
+              reprehenderit.
+            </p>
+          </div>
+          <div className={tw(`w-full md:w-1/2 lg:w-1/3 p-8`)}>
+            <div className={tw(`flex items-center mb-6`)}>
+              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
+              <div className={tw(`ml-4 text-xl`)}>Integrations</div>
+            </div>
+            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+              Nostrud excepteur incididunt proident sit nulla ipsum sunt nostrud est esse adipisicing irure officia
+              consectetur.
+            </p>
           </div>
         </div>
       </div>
