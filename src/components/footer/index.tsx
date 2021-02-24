@@ -26,7 +26,7 @@ const Footer = () => (
         <ul className={tw(`text-lg font-light flex flex-wrap w-full`)}>
           <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
             <div>
-              <h2 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Product</h2>
+              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Product</h4>
               <ul>
                 {productLinks.map((link) => (
                   <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
@@ -38,7 +38,7 @@ const Footer = () => (
           </li>
           <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
             <div>
-              <h2 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Resources</h2>
+              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Resources</h4>
               <ul>
                 {resourceLinks.map((link) => (
                   <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
@@ -50,7 +50,7 @@ const Footer = () => (
           </li>
           <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
             <div>
-              <h2 className={tw(`text-gray-900 text-base font-bold mb-1`)}>About Us</h2>
+              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>About Us</h4>
               <ul>
                 {aboutLinks.map((link) => (
                   <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
@@ -67,6 +67,7 @@ const Footer = () => (
           <h4 className={tw(`font-mono text-sm uppercase text-gray-500 mb-3`)}>Subscribe our newsletter</h4>
           <div className={tw(`flex w-full`)}>
             <input
+              aria-label="email address"
               type="text"
               className={tw(`border border-gray-300 bg-gray-100 min-w-0 rounded text-gray-800 py-2 px-3 mr-2`)}
               placeholder="Enter your email"

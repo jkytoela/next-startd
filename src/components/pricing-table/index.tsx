@@ -18,7 +18,7 @@ const PricingTable = () => (
     <div className={tw(`relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24`)}>
       <div className={tw(`overflow-hidden lg:max-w-none lg:flex`)}>
         <div className={tw(`px-6 py-8 lg:flex-shrink-1 lg:p-12`)}>
-          <h3 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>Are you ready?</h3>
+          <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>Are you ready?</h2>
           <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>
             Lorem id ullamco pariatur eiusmod labore qui deserunt incididunt deserunt nostrud. Tempor duis in
             adipisicing exercitation ipsum nostrud esse. Reprehenderit cupidatat sint est deserunt id eiusmod amet
@@ -26,14 +26,14 @@ const PricingTable = () => (
           </p>
           <div className={tw(`mt-8`)}>
             <div className={tw(`flex items-center`)}>
-              <h4
+              <h3
                 className={tw(
                   `flex-shrink-0 pr-4 text-sm leading-5
                 tracking-wider font-semibold uppercase text-indigo-600`,
                 )}
               >
                 What is included
-              </h4>
+              </h3>
               <div className={tw(`flex-1 border-t-2 border-gray-200`)} />
             </div>
             <ul className={tw(`mt-8 lg:grid lg:grid-cols-2`)}>
