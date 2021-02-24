@@ -62,6 +62,12 @@
         "@typescript-eslint/no-use-before-define": [1],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-var-requires": "off",
+        "max-len": ["error", {"code": 120, "ignoreUrls": true}],
+        "react/jsx-first-prop-new-line": [2, "multiline"],
+        "react/jsx-max-props-per-line": [
+          2,
+          { "maximum": 1, "when": "multiline" }
+        ],
         "@typescript-eslint/quotes": [
           2,
           "backtick",

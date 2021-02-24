@@ -47,14 +47,34 @@ const secondaryLinks = [
 ];
 
 const MenuButton = ({ toggleMenu, showMenu }: IMenuButton) => (
-  <button type="button" aria-controls="mobile-menu" aria-expanded={showMenu} onClick={toggleMenu} className={tw(`p-2 text-gray-400`)}>
+  <button
+    type="button"
+    aria-controls="mobile-menu"
+    aria-expanded={showMenu}
+    onClick={toggleMenu}
+    className={tw(`p-2 text-gray-400`)}
+  >
     <span className={tw(`sr-only`)}>Open menu</span>
     {showMenu ? (
-      <svg className={tw(`h-6 w-6`)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+      <svg
+        className={tw(`h-6 w-6`)}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
       </svg>
     ) : (
-      <svg className={tw(`h-6 w-6`)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+      <svg
+        className={tw(`h-6 w-6`)}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     )}
@@ -73,7 +93,11 @@ const MobileMenu = () => (
     <div className={tw(`pt-4 pb-3 border-t border-gray-700`)}>
       <div className={tw(`mt-3 px-2 space-y-1`)}>
         {secondaryLinks.map((link: Link) => (
-          <a key={`mobile-${link.href}`} href={link.href} className={tw(`block px-3 py-2 text-base font-medium text-gray-500`)}>
+          <a
+            key={`mobile-${link.href}`}
+            href={link.href}
+            className={tw(`block px-3 py-2 text-base font-medium text-gray-500`)}
+          >
             {link.label}
           </a>
         ))}
@@ -97,7 +121,11 @@ const Navigation = () => {
             <div className={tw(`hidden md:block`)}>
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
                 {links.map((link: Link) => (
-                  <a key={link.href} href={link.href} className={tw(`text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md font-medium`)}>
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className={tw(`text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md font-medium`)}
+                  >
                     {link.label}
                   </a>
                 ))}

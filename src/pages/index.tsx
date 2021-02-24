@@ -9,6 +9,7 @@ export default function Home() {
       <Header />
       <main>
         <VideoSection />
+        <section className={tw(`bg-white py-24`)}>Hello</section>
       </main>
     </Page>
   );
