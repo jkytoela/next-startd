@@ -33,6 +33,7 @@
     "next": "10.0.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-particles-js": "3.4.1",
     "twind": "0.15.4"
   },
   "devDependencies": {

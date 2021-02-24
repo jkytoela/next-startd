@@ -2,7 +2,7 @@ import { tw } from 'twind';
 import Check from '@/constants/svg/check.svg';
 
 const FeatureSection = () => (
-  <section className={tw(`bg-white`)}>
+  <section className={tw(`bg-white pb-6`)}>
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8`)}>
       <div className={tw(`container mx-auto px-6 p-6 bg-white`)}>
         <div className={tw(`mb-16 text-center`)}>
@@ -15,7 +15,7 @@ const FeatureSection = () => (
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
               <div className={tw(`ml-4 text-xl`)}>Increase sales</div>
             </div>
-            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+            <p className={tw(`leading-loose text-gray-500`)}>
               Consectetur pariatur irure exercitation sit amet id consectetur consecteturmagna et Lorem labore qui
               velit.
             </p>
@@ -25,7 +25,7 @@ const FeatureSection = () => (
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
               <div className={tw(`ml-4 text-xl`)}>Enterprise-ready</div>
             </div>
-            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+            <p className={tw(`leading-loose text-gray-500 `)}>
               Labore duis pariatur est exercitation laboris cupidatat amet cillum. Amet nisi ullamco.
             </p>
           </div>
@@ -34,7 +34,7 @@ const FeatureSection = () => (
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
               <div className={tw(`ml-4 text-xl`)}>Unlimited growth</div>
             </div>
-            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+            <p className={tw(`leading-loose text-gray-500`)}>
               Elit deserunt nisi esse duis cupidatat proident sit minim mollit officia pariatur incididunt in tempor.
             </p>
           </div>
@@ -43,7 +43,7 @@ const FeatureSection = () => (
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
               <div className={tw(`ml-4 text-xl`)}>Recommended by experts</div>
             </div>
-            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+            <p className={tw(`leading-loose text-gray-500`)}>
               Velit sit tempor pariatur quis pariatur incididunt culpa dolor voluptate officia incididunt velit dolore.
             </p>
           </div>
@@ -52,7 +52,7 @@ const FeatureSection = () => (
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
               <div className={tw(`ml-4 text-xl`)}>Modern platform</div>
             </div>
-            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+            <p className={tw(`leading-loose text-gray-500`)}>
               Laboris elit consectetur sint nisi eu mollit proident sit magna velit adipisicing consequat amet
               reprehenderit.
             </p>
@@ -62,7 +62,7 @@ const FeatureSection = () => (
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
               <div className={tw(`ml-4 text-xl`)}>Integrations</div>
             </div>
-            <p className={tw(`leading-loose text-gray-500 text-md`)}>
+            <p className={tw(`leading-loose text-gray-500`)}>
               Nostrud excepteur incididunt proident sit nulla ipsum sunt nostrud est esse adipisicing irure officia
               consectetur.
             </p>
