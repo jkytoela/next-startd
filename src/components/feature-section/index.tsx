@@ -7,7 +7,9 @@ const FeatureSection = () => (
       <div className={tw(`container mx-auto px-6 p-6 bg-white`)}>
         <div className={tw(`mb-16 text-center`)}>
           <h3 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>Features</h3>
-          <p className={tw(`mt-2 text-7xl font-bold tracking-tight text-gray-900`)}>How we change the game</p>
+          <p className={tw(`mt-2 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>
+            How we change the game
+          </p>
         </div>
         <div className={tw(`flex flex-wrap my-12`)}>
           <div className={tw(`w-full border-b md:w-1/2 md:border-r lg:w-1/3 p-8`)}>

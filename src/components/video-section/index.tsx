@@ -21,7 +21,7 @@ const VideoSection = () => (
     <div className={tw(`max-w-7xl mx-auto`)}>
       <div className={tw(`flex flex-col max-w-4xl mx-auto pt-28`)}>
         <div className={tw(`w-full`)}>
-          <div className={tw(`relative shadow-2xl`)}>
+          <div className={tw(`relative shadow-2xl mx-6 lg:mx-0`)}>
             <Preferences />
             <PlayButton />
           </div>

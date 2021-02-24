@@ -67,18 +67,13 @@ const CasesSection = () => (
       <div className={tw(`absolute left-0 top-0 h-screen w-full overflow-hidden`)}>
         <ParticleBg />
       </div>
-      <div className={tw(`max-w-7xl mx-auto pt-40`)}>
-        <h1 className={tw(`text-white text-7xl font-bold text-center`)}>What will you build?</h1>
+      <div className={tw(`max-w-7xl mx-4 lg:mx-auto pt-20 lg:pt-40`)}>
+        <h1 className={tw(`text-white text-4xl lg:text-7xl font-bold text-center`)}>What will you build?</h1>
         <p className={tw(`text-white text-gray-400 text-center text-xl mt-12`)}>
           Don’t just take our word for it — see what leaders in digital are saying
         </p>
         <div className={tw(`mx-auto pt-24`)}>
-          <div
-            className={tw(
-              `w-full lg:flex md:flex xl:justify-around sm:flex flex-wrap
-                    md:justify-around sm:justify-around lg:justify-around`,
-            )}
-          >
+          <div className={tw(`w-full flex flex-wrap justify-around`)}>
             {articles.map((article) => (
               <div
                 className={tw(
@@ -101,8 +96,8 @@ const CasesSection = () => (
             ))}
             <span
               className={tw(
-                `mt-4 flex items-center text-xl text-indigo-500 mx-auto
-                      cursor-pointer z-30 hover:text-indigo-600`,
+                `-mt-8 pb-12 lg:mt-4 flex items-center text-xl
+                text-indigo-500 cursor-pointer z-30 hover:text-indigo-600`,
               )}
             >
               See all case studies

@@ -5,6 +5,7 @@ import VideoSection from '@/components/video-section';
 import ListSection from '@/components/list-section';
 import FeatureSection from '@/components/feature-section';
 import CasesSection from '@/components/cases-section';
+import SocialProof from '@/components/social-proof';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <ListSection />
         <FeatureSection />
         <CasesSection />
+        <SocialProof />
       </main>
     </Page>
   );
