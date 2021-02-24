@@ -7,6 +7,7 @@ import FeatureSection from '@/components/feature-section';
 import CasesSection from '@/components/cases-section';
 import SocialProof from '@/components/social-proof';
 import PricingTable from '@/components/pricing-table';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <SocialProof />
         <PricingTable />
       </main>
+      <Footer />
     </Page>
   );
 }

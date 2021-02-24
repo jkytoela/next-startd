@@ -15,34 +15,34 @@ type Link = {
 const links = [
   {
     label: `Features`,
-    href: `#`,
+    href: `/`,
   },
   {
     label: `Testimonials`,
-    href: `#`,
+    href: `/`,
   },
   {
     label: `Pricing`,
-    href: `#`,
+    href: `/`,
   },
   {
     label: `Blog`,
-    href: `#`,
+    href: `/`,
   },
 ];
 
 const secondaryLinks = [
   {
     label: `Contact sales`,
-    href: `#`,
+    href: `/`,
   },
   {
     label: `Log in`,
-    href: `#`,
+    href: `/`,
   },
   {
     label: `Get Started`,
-    href: `#`,
+    href: `/`,
   },
 ];
 
@@ -85,16 +85,16 @@ const MobileMenu = () => (
   <div className={tw(`md:hidden`)}>
     <div className={tw(`px-2 pt-2 pb-3 space-y-1 sm:px-3`)}>
       {links.map((link: Link) => (
-        <a href={link.href} className={tw(`text-gray-500 block px-3 py-2 text-base font-medium`)}>
+        <a href={link.href} className={tw(`text-gray-500 block px-3 py-2 text-base font-medium`)} key={link.label}>
           {link.label}
         </a>
       ))}
     </div>
-    <div className={tw(`pt-4 pb-3 border-t border-gray-700`)}>
-      <div className={tw(`mt-3 px-2 space-y-1`)}>
+    <div className={tw(`pt-4 pb-3 border-t border-gray-400`)}>
+      <div className={tw(`px-2 space-y-1`)}>
         {secondaryLinks.map((link: Link) => (
           <a
-            key={`mobile-${link.href}`}
+            key={`mobile-${link.label}`}
             href={link.href}
             className={tw(`block px-3 py-2 text-base font-medium text-gray-500`)}
           >
@@ -122,7 +122,7 @@ const Navigation = () => {
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
                 {links.map((link: Link) => (
                   <a
-                    key={link.href}
+                    key={link.label}
                     href={link.href}
                     className={tw(`text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md font-medium`)}
                   >

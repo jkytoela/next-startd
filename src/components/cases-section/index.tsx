@@ -50,12 +50,12 @@ const articles = [
     alt: `Proident pariatur est.`,
   },
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur ipsum esse.`,
+    title: `Velit reprehenderit culpa Lorem reprehenderit ipsum esse.`,
     image: `/images/case-2.webp`,
     alt: `Proident pariatur est.`,
   },
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur ipsum esse.`,
+    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur esse.`,
     image: `/images/case-3.webp`,
     alt: `Proident pariatur est.`,
   },
@@ -76,6 +76,7 @@ const CasesSection = () => (
           <div className={tw(`w-full flex flex-wrap justify-around`)}>
             {articles.map((article) => (
               <div
+                key={article.title}
                 className={tw(
                   `xl:w-1/3 sm:w-5/12 sm:max-w-xs relative mb-32 lg:mb-20
                       xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0 cursor-pointer hover:scale-105`,
