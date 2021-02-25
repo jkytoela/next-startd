@@ -1,17 +1,17 @@
 import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
 
 import { setup } from 'twind';
-import { virtualSheet, getStyleTag } from 'twind/sheets';
+// import { virtualSheet, getStyleTag } from 'twind/sheets';
 
 interface IProps {
-  styleTag: string;
+  styleTag?: string;
 }
 
 class MyDocument extends Document<IProps> {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    const sheet = virtualSheet();
-    sheet.reset();
+    // const sheet = virtualSheet();
+    // sheet.reset();
 
     setup({
       theme: {
@@ -25,19 +25,17 @@ class MyDocument extends Document<IProps> {
       },
     });
 
-    const styleTag = getStyleTag(sheet);
+    // const styleTag = getStyleTag(sheet);
 
-    return { ...initialProps, styleTag };
+    return initialProps;
   }
 
   render() {
     return (
       <Html lang="en">
-        <Head>
-          <style>{this.props.styleTag}</style>
-        </Head>
+        <Head />
         <body>
-          {/* <script>0</script> */}
+          <script>0</script>
           <Main />
           <NextScript />
         </body>
