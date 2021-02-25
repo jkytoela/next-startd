@@ -35,7 +35,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <script async src="https://scripts.simpleanalyticscdn.com/latest.js" />
+        </Head>
         <body>
           <Main />
           <NextScript />
