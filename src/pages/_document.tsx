@@ -1,16 +1,43 @@
 import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
 
-class MyDocument extends Document {
+import { setup } from 'twind';
+import { virtualSheet, getStyleTag } from 'twind/sheets';
+
+interface IProps {
+  styleTag: string;
+}
+
+class MyDocument extends Document<IProps> {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    return initialProps;
+    const sheet = virtualSheet();
+    sheet.reset();
+
+    setup({
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: `Inter, ui-sans-serif, system-ui, -apple-system,
+            BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+            sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
+          },
+        },
+      },
+    });
+
+    const styleTag = getStyleTag(sheet);
+
+    return { ...initialProps, styleTag };
   }
 
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <style>{this.props.styleTag}</style>
+        </Head>
         <body>
+          {/* <script>0</script> */}
           <Main />
           <NextScript />
         </body>

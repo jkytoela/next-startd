@@ -18,7 +18,7 @@ export default function Home() {
         description="A TypeScript/Next.js theme that includes everything you need to build amazing landing page!"
       />
       <Header />
-      <main className={tw(`w-full`)}>
+      <main>
         <VideoSection />
         <ListSection />
         <FeatureSection />
