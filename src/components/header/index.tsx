@@ -12,7 +12,7 @@ const headerStyle = css`
 
 const Header = () => (
   <header className={tw(headerStyle)}>
-    <div className={tw(`max-w-5xl mx-auto py-16 px-14 sm:px-6 lg:px-8`)}>
+    <div className={tw(`max-w-4xl mx-auto py-16 px-14 sm:px-6 lg:px-8`)}>
       <h1 className={tw(`font-sans font-bold text-5xl lg:text-8xl text-center leading-snug text-gray-800`)}>
         Your website, beyond expectations
       </h1>
@@ -31,10 +31,10 @@ const Header = () => (
       <div className={tw(`mt-4 w-full`)}>
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>These folks get it</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
-          <Aws className={tw(`m-12 mb-8`)} height={60} width={100} />
-          <Netlify className={tw(`m-12`)} height={60} width={120} />
-          <Nike className={tw(`m-12`)} height={60} width={120} />
-          <Figma className={tw(`m-12`)} height={60} width={120} />
+          <Aws className={tw(`m-12 mb-8`)} width={120} />
+          <Netlify className={tw(`m-12`)} width={140} />
+          <Nike className={tw(`m-12`)} width={140} />
+          <Figma className={tw(`m-12`)} width={140} />
         </div>
       </div>
     </div>

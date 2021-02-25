@@ -35,7 +35,6 @@ class MyDocument extends Document<IProps> {
       <Html lang="en">
         <Head />
         <body>
-          <script>0</script>
           <Main />
           <NextScript />
         </body>

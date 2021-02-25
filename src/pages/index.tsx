@@ -1,4 +1,3 @@
-import { tw } from 'twind';
 import { NextSeo } from 'next-seo';
 import Page from '@/components/page';
 import Header from '@/components/header';
