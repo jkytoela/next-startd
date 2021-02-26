@@ -25,7 +25,7 @@ A free Next.js TypeScript landing page template for SaaS products, online servic
 
 ## 🚀 Getting started
 
-Easiest way to get started is to [click here](https://github.com/jkytoela/next-startd/generate).
+If you're logged in, easiest way to get started is to [click here](https://github.com/jkytoela/next-startd/generate).
 
 Run the following commands inside the project folder:
 
