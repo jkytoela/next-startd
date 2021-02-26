@@ -12,7 +12,7 @@
 A free Next.js TypeScript landing page template for SaaS products, online services and more.
 
 <p align="center">
-  [Live demo](https://next-startd.vercel.app)
+  <a href="https://next-startd.vercel.app">Live demo</a>
 </p>
 
 - ⚡ **Next.js** — The React Framework
