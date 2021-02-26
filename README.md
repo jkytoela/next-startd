@@ -11,9 +11,13 @@
 
 A free Next.js TypeScript landing page template for SaaS products, online services and more.
 
+<p align="center">
+  [Live demo](https://next-startd.vercel.app)
+</p>
+
 - ⚡ **Next.js** — The React Framework
 - 🔥 **next-seo** — Manage SEO easily
-- 💡 **twind** — The smallest, fastest, most feature complete Tailwind-in-JS solution in existence
+- 💡 **Twind** — The smallest, fastest, most feature complete Tailwind-in-JS solution in existence
 - 📏 **ESLint** — Pluggable JavaScript linter
 - 💖 **Prettier** — Opinionated Code Formatter
 - 🐶 **Husky** — Use git hooks with ease
