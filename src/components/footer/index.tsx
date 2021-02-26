@@ -69,7 +69,7 @@ const Footer = () => (
             <input
               aria-label="email address"
               type="text"
-              className={tw(`border border-gray-300 bg-gray-100 min-w-0 rounded text-gray-800 py-2 px-3 mr-2`)}
+              className={tw(`border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`)}
               placeholder="Enter your email"
             />
             <Button>Subscribe</Button>
