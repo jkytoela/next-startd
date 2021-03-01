@@ -4,8 +4,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=for-the-badge&color=24B36B&labelColor=000000" alt="PRs welcome!" />
-
-  <img alt="License" src="https://img.shields.io/github/license/jpedroschmitz/typescript-nextjs-starter?style=for-the-badge&color=24B36B&labelColor=000000">
+  <img alt="License" src="https://img.shields.io/github/license/jkytoela/next-startd?style=for-the-badge&color=24B36B&labelColor=000000">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/jkytoela/next-startd?style=for-the-badge&color=24B36B&labelColor=000000">
 </p>
 <br>
 
