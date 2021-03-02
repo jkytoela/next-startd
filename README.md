@@ -31,18 +31,18 @@ If you're logged in, easiest way to get started is to [click here](https://githu
 
 Run the following commands inside the project folder:
 
-1. `yarn`;
-2. `yarn dev`;
+1. `yarn`
+2. `yarn dev`
 
-To view the project open `http://localhost:3000`.
+To view the project open `http://localhost:3000`
 
 
 ## 🤝 Contributing
 
-1. Fork this repository;
-2. Create your branch: `git checkout -b my-new-feature`;
-3. Commit your changes: `git commit -m 'Add some feature'`;
-4. Push to the branch: `git push origin my-new-feature`.
+1. Fork this repository
+2. Create your branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
 
 Consider contributing to the original TypeScript Starter, which you can find [here](https://github.com/jpedroschmitz).
 
