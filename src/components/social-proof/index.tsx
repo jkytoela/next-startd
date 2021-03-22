@@ -39,7 +39,7 @@ const SocialProof = () => {
   };
 
   return (
-    <div className={tw(`container mx-auto my-8`)}>
+    <div id="testimonials" className={tw(`px-5 container mx-auto my-8`)}>
       <div className={tw(`max-w-7xl mx-auto`)}>
         <section>
           <figure>

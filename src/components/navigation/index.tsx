@@ -15,34 +15,26 @@ type Link = {
 const links = [
   {
     label: `Features`,
-    href: `/`,
+    href: `#features`,
   },
   {
     label: `Testimonials`,
-    href: `/`,
+    href: `#testimonials`,
   },
   {
     label: `Pricing`,
-    href: `/`,
-  },
-  {
-    label: `Blog`,
-    href: `/`,
+    href: `#pricing`,
   },
 ];
 
 const secondaryLinks = [
   {
     label: `Contact sales`,
-    href: `/`,
-  },
-  {
-    label: `Log in`,
-    href: `/`,
+    href: `#contact-sales`,
   },
   {
     label: `Get a Quote`,
-    href: `/`,
+    href: `#get-a-quote`,
   },
 ];
 
