@@ -41,7 +41,7 @@ const secondaryLinks = [
     href: `/`,
   },
   {
-    label: `Get Started`,
+    label: `Get a Quote`,
     href: `/`,
   },
 ];
@@ -140,7 +140,7 @@ const Navigation = () => {
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
               <Button modifier="border-0 mr-2">Contact sales</Button>
               <Button modifier="border-0 mr-2">Log in</Button>
-              <Button primary>Get started</Button>
+              <Button primary>Get a Quote</Button>
             </div>
           </div>
           <div className={tw(`-mr-2 flex md:hidden`)}>

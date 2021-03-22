@@ -4,7 +4,7 @@ import Button from '@/components/button';
 const productLinks = [`Features`, `Customers`, `Platform`, `Pricing`, `Enterprise`, `What's new?`];
 const aboutLinks = [`About Us`, `Careers`, `Leadership`, `Blog`, `Events`, `Press`];
 const resourceLinks = [
-  `Get started`,
+  `Get a Quote`,
   `Guides`,
   `Tools`,
   `Case studies`,
