@@ -8,6 +8,8 @@ import CasesSection from '@/components/cases-section';
 import SocialProof from '@/components/social-proof';
 import PricingTable from '@/components/pricing-table';
 import Footer from '@/components/footer';
+import ContactSupport from '@/components/contact-support';
+import GetAQuote from '@/components/get-a-quote';
 
 export default function Home() {
   return (
@@ -16,11 +18,11 @@ export default function Home() {
       <Header />
       <main>
         <ListSection />
-        <VideoSection />
+        <ContactSupport />
+        <GetAQuote />
         <FeatureSection />
-        <CasesSection />
-        <SocialProof />
         <PricingTable />
+        <SocialProof />
       </main>
       <Footer />
     </Page>

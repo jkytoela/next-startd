@@ -14,8 +14,8 @@ const features = [
 ];
 
 const PricingTable = () => (
-  <section id="pricing" className={tw(`px-5 bg-gradient-to-b from-gray-100 to-white shadow-inner pt-12`)}>
-    <div className={tw(`relative max-w-7xl mx-auto mb-24`)}>
+  <section id="pricing" className={tw(`px-5 bg-even pt-12`)}>
+    <div className={tw(`relative max-w-7xl mx-auto`)}>
       <div className={tw(`overflow-hidden lg:max-w-none lg:flex`)}>
         <div className={tw(`py-8 px-6 md:px-0 lg:flex-shrink-1`)}>
           <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>Are you ready?</h2>

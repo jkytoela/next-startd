@@ -1,3 +1,8 @@
 @import "@fontsource/inter/400.css";
 @import "@fontsource/inter/500.css";
 @import "@fontsource/inter/700.css";
+
+/* NON TAILWIND */
+.bg-custom {
+background: linear-gradient(107.23deg, #0d1835, #16375f);
+}
