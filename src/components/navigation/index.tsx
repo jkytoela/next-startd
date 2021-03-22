@@ -33,7 +33,7 @@ const secondaryLinks = [
     href: `#contact-sales`,
   },
   {
-    label: `Get a Quote`,
+    label: `Get a Free Quote`,
     href: `#get-a-quote`,
   },
 ];
@@ -130,9 +130,10 @@ const Navigation = () => {
           </div>
           <div className={tw(`hidden md:block`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
-              <Button modifier="border-0 mr-2">Contact sales</Button>
-              <Button modifier="border-0 mr-2">Log in</Button>
-              <Button primary>Get a Quote</Button>
+              <a href="tel:+13192965799">
+                <Button modifier="border-0 mr-2">Call: +1-319-296-5799</Button>
+              </a>
+              <Button primary>Get a Free Quote</Button>
             </div>
           </div>
           <div className={tw(`-mr-2 flex md:hidden`)}>

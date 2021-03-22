@@ -1,0 +1,28 @@
+name: Deploy to Caprover
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+ # Publishes a docker image of the server app, and deploys it Caprover.
+  caprover-deploy:
+    runs-on: ubuntu-latest
+    container: node:14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Push docker image to GitHub Packages
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: dankore-software/dankoresoft.com/dankoresoft.com
+          tag_with_ref: true
+      - name: Deploy image
+        uses: stardustventures/caprover-deploy@v2
+        with:
+          server: "${{ secrets.CAPROVER_URL }}"
+          password: "${{ secrets.CAPROVER_PASSWORD }}"
+          appname: "${{ secrets.CAPROVER_APP }}"
+          image: docker.pkg.github.com/dankore-software/dankoresoft.com

@@ -22,9 +22,11 @@ const Header = () => (
         </p>
       </div>
       <div className={tw(`mt-10 flex justify-center items-center w-full mx-auto`)}>
-        <Button primary>Get a Quote</Button>
+        <Button primary>Get a Free Quote</Button>
         <span className={tw(`mx-2`)}>or</span>
-        <Button>Contact us</Button>
+        <a href="tel:+13192965799">
+          <Button>Call Us</Button>
+        </a>
       </div>
     </div>
     <div className={tw(`flex justify-center w-full`)}>
