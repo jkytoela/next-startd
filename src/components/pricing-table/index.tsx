@@ -43,7 +43,7 @@ const PricingTable = () => {
 
   return (
     <section className={tw(`bg-gradient-to-b from-gray-100 to-white shadow-inner pt-12`)}>
-      {/* <div className={tw(`relative max-w-7xl mx-auto mb-24`)}>
+      <div className={tw(`relative max-w-7xl mx-auto mb-24`)}>
         <div className={tw(`overflow-hidden lg:max-w-none lg:flex`)}>
           <div className={tw(`py-8 px-6 md:px-0 lg:flex-shrink-1`)}>
             <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>運賃のお見積もり</h2>
@@ -83,44 +83,42 @@ const PricingTable = () => {
                 </li>
                 <li className={tw(`flex items-center lg:col-span-6`)} key="truck_size">
                   <p className={tw(`text-gray-600`)}>トラックサイズ</p>
-                  <label className={tw()}>
-                    <input value="small" type="radio" onChange={truckSizeHandler} checked={truckSize === `small`} />
-                    {` `}
-                    小型車 (2t)
-                  </label>
-                  <label className={tw()}>
-                    <input value="middle" type="radio" onChange={truckSizeHandler} checked={truckSize === `middle`} />
-                    {` `}
-                    中型車 (4t)
-                  </label>
-                  <label className={tw()}>
-                    <input value="large" type="radio" onChange={truckSizeHandler} checked={truckSize === `large`} />
-                    {` `}
-                    大型車 (8t)
-                  </label>
-                  <label className={tw()}>
-                    <input value="trailer" type="radio" onChange={truckSizeHandler} checked={truckSize === `trailer`} />
-                    {` `}
-                    トレーラー
-                  </label>
+                  {/* <label className={tw()}> */}
+                  <input value="small" type="radio" onChange={truckSizeHandler} checked={truckSize === `small`} />
+                  {` `}
+                  小型車 (2t)
+                  {/* </label> */}
+                  {/* <label className={tw()}> */}
+                  <input value="middle" type="radio" onChange={truckSizeHandler} checked={truckSize === `middle`} />
+                  {` `}
+                  中型車 (4t)
+                  {/* </label> */}
+                  {/* <label className={tw()}> */}
+                  <input value="large" type="radio" onChange={truckSizeHandler} checked={truckSize === `large`} />
+                  {` `}
+                  大型車 (8t)
+                  {/* </label> */}
+                  {/* <label className={tw()}> */}
+                  <input value="trailer" type="radio" onChange={truckSizeHandler} checked={truckSize === `trailer`} />
+                  {` `}
+                  トレーラー
+                  {/* </label> */}
                 </li>
                 <li className={tw(`flex items-center lg:col-span-6`)} key="truck_type">
                   <p className={tw(`text-gray-600`)}>トラック種類</p>
-                  <label className={tw()}>
-                    <input value="normal" type="radio" onChange={truckTypeHandler} checked={truckType === `normal`} />
-                    {` `}
-                    普通車
-                  </label>
-                  <label className={tw()}>
-                    <input value="冷蔵車" type="radio" onChange={truckTypeHandler} checked={truckType === `冷蔵車`} />
-                    {` `}
-                    冷蔵車 / 冷凍車
-                  </label>
+                  {/* <label className={tw()}> */}
+                  <input value="normal" type="radio" onChange={truckTypeHandler} checked={truckType === `normal`} />
+                  {` `}
+                  普通車
+                  {/* </label> */}
+                  {/* <label className={tw()}> */}
+                  <input value="冷蔵車" type="radio" onChange={truckTypeHandler} checked={truckType === `冷蔵車`} />
+                  {` `}
+                  冷蔵車 / 冷凍車
+                  {/* </label> */}
                 </li>
                 <li className={tw(`flex items-center lg:col-span-12`)} key="start_button">
-                  <Button primary>
-                    <p onClick={onSendHandler}>お見積もり開始</p>
-                  </Button>
+                  <Button primary>{/* <p onClick={onSendHandler}>お見積もり開始</p> */}</Button>
                 </li>
               </ul>
             </div>
@@ -148,7 +146,7 @@ const PricingTable = () => {
             </Button>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };
