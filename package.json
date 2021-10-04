@@ -20,7 +20,7 @@
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
     "postinstall": "husky install",
-    "cz": "node_modules/.bin/cz"
+    "cz": "./node_modules/.bin/cz"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
