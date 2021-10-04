@@ -36,6 +36,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
           <script async src="https://scripts.simpleanalyticscdn.com/latest.js" />
         </Head>
         <body>

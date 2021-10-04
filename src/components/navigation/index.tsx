@@ -1,6 +1,7 @@
 import { tw } from 'twind';
 import { useState } from 'react';
 import Button from '@/components/button';
+import Link from 'next/link';
 
 interface IMenuButton {
   toggleMenu: React.MouseEventHandler<HTMLButtonElement>;
@@ -14,35 +15,27 @@ type Link = {
 
 const links = [
   {
-    label: `Features`,
+    label: `荷主の方`,
     href: `/`,
   },
   {
-    label: `Testimonials`,
-    href: `/`,
-  },
-  {
-    label: `Pricing`,
-    href: `/`,
-  },
-  {
-    label: `Blog`,
-    href: `/`,
+    label: `運送会社の方`,
+    href: `/carriers`,
   },
 ];
 
 const secondaryLinks = [
   {
-    label: `Contact sales`,
-    href: `/`,
+    label: `プライバシーポリシー`,
+    href: `https://inprog-inc.com/privacy-policy/`,
   },
   {
-    label: `Log in`,
+    label: `ブログ`,
     href: `/`,
   },
   {
     label: `Get Started`,
-    href: `/`,
+    href: `https://docs.google.com/forms/d/e/1FAIpQLSfoH3u2QeasOURYP47Z3DaDcngdcWErmnnVnhIvn7RP22dtcg/viewform`,
   },
 ];
 
@@ -120,7 +113,7 @@ const Navigation = () => {
         <div className={tw(`flex items-center justify-between h-24`)}>
           <div className={tw(`flex items-center`)}>
             <div className={tw(`flex-shrink-0`)}>
-              <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" width={48} height={48} />
+              <img className={tw(`h-12 w-12 object-contain`)} src="awunlogo.png" alt="logo" height={48} />
             </div>
             <div className={tw(`hidden md:block`)}>
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
@@ -138,9 +131,9 @@ const Navigation = () => {
           </div>
           <div className={tw(`hidden md:block`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
-              <Button modifier="border-0 mr-2">Contact sales</Button>
-              <Button modifier="border-0 mr-2">Log in</Button>
-              <Button primary>Get started</Button>
+              <Button modifier="border-0 mr-2">プライバシーポリシー</Button>
+              <Button modifier="border-0 mr-2">ブログ</Button>
+              <Button primary>トライアルで使ってみる</Button>
             </div>
           </div>
           <div className={tw(`-mr-2 flex md:hidden`)}>
