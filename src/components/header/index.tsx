@@ -18,7 +18,7 @@ const Header = () => (
       </h1>
       <div className={tw(`max-w-xl mx-auto`)}>
         <p className={tw(`mt-10 text-gray-500 text-center text-xl lg:text-3xl`)}>
-          Make your website wonderful and build beyond your expectations.
+          This is awesome website
         </p>
       </div>
       <div className={tw(`mt-10 flex justify-center items-center w-full mx-auto`)}>
