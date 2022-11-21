@@ -17,6 +17,11 @@ export default function Home() {
         description="A TypeScript/Next.js theme that includes everything you need to build amazing landing page!"
       />
       <Header />
+      
+     <!--- Added support for Onduis Analytics Seamless Tracking -->
+
+     <script data-host="https://onduis.com" data-dnt="true" src="https://magic.onduis.com/js/script.js" id="ZwSg9rf6GA" async defer></script>
+      
       <main>
         <VideoSection />
         <ListSection />
